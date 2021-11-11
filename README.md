@@ -3,7 +3,7 @@
 Project used to manage parcels. Structure:
 
 1. server: server of project, built base on Lumen framework.
-2. tiny-parcel-sdk: sdk connect to server to execute the functions.
+2. tiny-parcel-sdk: small library use to integrate with an application.
 3. demo: sample file to show how to use the sdk.
 
 # How to set up server
@@ -16,10 +16,6 @@ This server part was built base on Lumen framework (#Ref: https://lumen.laravel.
 4. Run command "php -S localhost:8000 -t public" to start the built-in PHP development server
 5. We can update the configurations like "secret key" and "price model" in config/tinyparcel.php. The "tp_secret" will
    be use to authenticate (bearer token) as this system didn't have login feature.
-
-# How to set up sdk
-
-Go to sdk directory and run command "composer install"
 
 # How to set up demo app
 
