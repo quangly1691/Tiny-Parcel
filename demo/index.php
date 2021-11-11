@@ -5,16 +5,16 @@
  *
  */
 
-require_once __DIR__ . '/vendor/tiny-parcel-sdk/vendor/autoload.php';
+//require_once __DIR__ . '/vendor/tiny-parcel-sdk/vendor/autoload.php';
 
-use TinyParcel\PhpSdk\TPClient;
-
-$tpClient = new TPClient(
-    [
-        'base_url' => 'http://localhost:8000',
-        'secret' => 'mFdBQKZwYzanKalU43z6B8AOjUu7amoz7ht9eJa3zjsLjIWJMdHOcAo2n8h3'
-    ]
-);
+//use TinyParcel\PhpSdk\TPClient;
+//
+//$tpClient = new TPClient(
+//    [
+//        'base_url' => 'http://localhost:8000',
+//        'secret' => 'mFdBQKZwYzanKalU43z6B8AOjUu7amoz7ht9eJa3zjsLjIWJMdHOcAo2n8h3'
+//    ]
+//);
 
 /**
  * Create a parcel
