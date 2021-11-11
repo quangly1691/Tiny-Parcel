@@ -13,6 +13,13 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
+$router->group(['middleware' => 'tp_auth'], function () use ($router) {
+    $router->group(['prefix' => 'parcels'], function () use ($router) {
+        $router->post('/', 'ParcelController@create');
+        $router->put('/{id}', 'ParcelController@update');
+        $router->get('/{id}', 'ParcelController@show');
+        $router->delete('/{id}', 'ParcelController@delete');
+    });
+
+    $router->get('/prices', 'ParcelController@getDeliveryPrice');
 });

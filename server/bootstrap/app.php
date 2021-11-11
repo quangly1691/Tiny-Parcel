@@ -25,7 +25,7 @@ $app = new Laravel\Lumen\Application(
 
 // $app->withFacades();
 
-// $app->withEloquent();
+ $app->withEloquent();
 
 /*
 |--------------------------------------------------------------------------
@@ -61,6 +61,9 @@ $app->singleton(
 
 $app->configure('app');
 
+// Add TinyParcel configuration file
+$app->configure('tinyparcel');
+
 /*
 |--------------------------------------------------------------------------
 | Register Middleware
@@ -79,6 +82,12 @@ $app->configure('app');
 // $app->routeMiddleware([
 //     'auth' => App\Http\Middleware\Authenticate::class,
 // ]);
+
+// Add Bluecore authentication
+$app->routeMiddleware([
+    'auth' => App\Http\Middleware\Authenticate::class,
+    'tp_auth' => App\Http\Middleware\TinyParcelMiddleware::class,
+]);
 
 /*
 |--------------------------------------------------------------------------

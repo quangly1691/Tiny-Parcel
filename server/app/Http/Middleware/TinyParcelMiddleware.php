@@ -4,7 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 
-class ExampleMiddleware
+class TinyParcelMiddleware
 {
     /**
      * Handle an incoming request.
@@ -15,6 +15,13 @@ class ExampleMiddleware
      */
     public function handle($request, Closure $next)
     {
+        if (!$request->bearerToken() || $request->bearerToken() != config('tinyparcel.tp_secret')) {
+            return response()->json([
+                'success' => false,
+                'error' => 'Unauthorized',
+            ], 401);
+        }
+
         return $next($request);
     }
 }
