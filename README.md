@@ -13,9 +13,11 @@ This server part was built base on Lumen framework (#Ref: https://lumen.laravel.
 1. Create a database
 2. Go to server directory, copy file .env.example to .env. Then fill information of database
 3. Run command "composer install" to install the dependencies
-4. Run command "php -S localhost:8000 -t public" to start the built-in PHP development server
-5. We can update the configurations like "secret key" and "price model" in config/tinyparcel.php. The "tp_secret" will
-   be use to authenticate (bearer token) as this system didn't have login feature.
+4. Run command "php artisan migrate" to create database table
+5. Run command "php -S localhost:8000 -t public" to start the built-in PHP development server. Then the url of server
+   will be http://localhost:8000
+6. We can update the configurations like "secret key" and "price model" in config/tinyparcel.php. The "tp_secret" will
+   be used to authenticate (bearer token) as this system didn't have login feature.
 
 # How to set up demo app
 
