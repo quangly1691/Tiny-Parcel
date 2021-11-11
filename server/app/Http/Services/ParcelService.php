@@ -93,6 +93,7 @@ class ParcelService
     {
         $parcelIds = explode(',', $parcelIds);
         $totalPrice = 0;
+        $parcelIds = array_unique($parcelIds);
         foreach ($parcelIds as $id) {
             $parcel = $this->getParcelById($id);
             if (!$parcel) {
