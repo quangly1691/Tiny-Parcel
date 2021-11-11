@@ -22,3 +22,5 @@ Homestead.json
 /.vagrant
 .phpunit.result.cache
 .idea/
+tiny-parcel-sdk/composer.lock
+tiny-parcel-sdk/vendor/
