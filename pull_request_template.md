@@ -6,6 +6,6 @@
 # Checklist:
 
 - [ ] Unit tests are ok
-- [ ] Code does't contain secret
+- [ ] Code doesn't contain secret
 - [ ] No alert raised by audit code
 - [ ] Package are up to date
