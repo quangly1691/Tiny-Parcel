@@ -1,9 +1,17 @@
-## Describe your changes
+ All Submissions:
 
-## Issue ticket number and link
+* [ ] Have you followed the guidelines in our Contributing document?
+* [ ] Have you checked to ensure there aren't other open [Pull Requests](../../../pulls) for the same update/change?
 
-## Checklist before requesting a review
-- [ ] I have performed a self-review of my code
-- [ ] If it is a core feature, I have added thorough tests.
-- [ ] Do we need to implement analytics?
-- [ ] Will this be part of a product update? If yes, please write one phrase about this update.
+<!-- You can erase any parts of this template not applicable to your Pull Request. -->
+
+### New Feature Submissions:
+
+1. [ ] Does your submission pass tests?
+2. [ ] Have you lint your code locally before submission?
+
+### Changes to Core Features:
+
+* [ ] Have you added an explanation of what your changes do and why you'd like us to include them?
+* [ ] Have you written new tests for your core changes, as applicable?
+* [ ] Have you successfully run tests with your changes locally?
