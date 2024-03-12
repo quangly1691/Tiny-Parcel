@@ -1,19 +1,15 @@
-name: Creates and Updates PR
+name: Require Checklist
+
 on:
-  push:
-    branches:
-    - develop
+  pull_request:
+    types: [closed]
+
 jobs:
-  pull-request:
+  validate_check_list:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - name: pull-request
-      uses: repo-sync/pull-request@v2
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-    - name: update-pull-request
-      uses: kt3k/update-pr-description@v2
-      with:
-        pr_body: "**some description**"
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: ivangabriele/find-and-replace-pull-request-body@v1.1.5
+        with:
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          find: '- [ ]'
+          replace: '&#x2611;'
