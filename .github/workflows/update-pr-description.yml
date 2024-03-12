@@ -1,0 +1,15 @@
+name: Require Checklist
+
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+  validate_check_list:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ivangabriele/find-and-replace-pull-request-body@v1.1.5
+        with:
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          find: '- [ ]'
+          replace: '&#x2611;'
