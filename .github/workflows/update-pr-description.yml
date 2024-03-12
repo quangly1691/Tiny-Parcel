@@ -1,11 +1,11 @@
-name: Require Checklist
+name: Update PR Description
 
 on:
   pull_request:
     types: [closed]
 
 jobs:
-  validate_check_list:
+  update_pr_desc:
     runs-on: ubuntu-latest
     steps:
       - uses: ivangabriele/find-and-replace-pull-request-body@v1.1.5
