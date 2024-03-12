@@ -7,7 +7,7 @@ on:
     types: [opened, edited, deleted]
 
 jobs:
-  job1:
+  checkListValidation:
     runs-on: ubuntu-latest
     steps:
       - uses: mheap/require-checklist-action@v2
