@@ -11,5 +11,5 @@ jobs:
       - uses: ivangabriele/find-and-replace-pull-request-body@v1.1.5
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
-          find: 'summary'
+          find: '- [x]'
           replace: 'test'
