@@ -9,5 +9,3 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: quangly1691/action-check-pr-desc@v1.1
-        with:
-          requireChecklist: false # If this is true and there are no checklists detected, the action will fail
