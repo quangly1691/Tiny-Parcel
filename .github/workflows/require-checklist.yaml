@@ -7,5 +7,7 @@ on:
 jobs:
   validate_check_list:
     runs-on: ubuntu-latest
+    env:
+      PR_BODY: ${{ github.event.pull_request.body }}
     steps:
-      - uses: quangly1691/action-check-pr-desc@v1.1
+      - uses: quangly1691/action-check-pr-desc@v1.5
