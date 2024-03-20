@@ -8,6 +8,4 @@ jobs:
   validate_check_list:
     runs-on: ubuntu-latest
     steps:
-      - uses: mheap/require-checklist-action@v2
-        with:
-          requireChecklist: false # If this is true and there are no checklists detected, the action will fail
+      - uses: quangly1691/action-check-pr-desc@v1.0
