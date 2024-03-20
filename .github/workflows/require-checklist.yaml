@@ -8,4 +8,4 @@ jobs:
   validate_check_list:
     runs-on: ubuntu-latest
     steps:
-      - uses: quangly1691/action-check-pr-desc@v1.6
+      - uses: quangly1691/action-check-pr-desc@v1.8
