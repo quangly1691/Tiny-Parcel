@@ -8,8 +8,4 @@ jobs:
   update_pr_desc:
     runs-on: ubuntu-latest
     steps:
-      - uses: quangly1691/action-update-pr-desc@v1.4
-        with:
-          githubToken: ${{ secrets.GITHUB_TOKEN }}
-          find: '- [x]'
-          replace: '&#x2611;'
+      - uses: quangly1691/action-update-pr-desc@v1.5
