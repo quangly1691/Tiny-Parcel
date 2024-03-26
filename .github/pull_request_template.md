@@ -2,7 +2,6 @@
 
 >Please include a summary of the changes and the related issue.
 
-
 # Checklist:
 
 - [ ] Unit tests are ok
